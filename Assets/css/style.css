@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/* apply styles to <header> */
+header {
+    padding: 20px 35px;
+    background-color: #dd9b0c;
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 36px;
+    color: #f9f9f8;
+    margin: 0;
+    display: inline;
+}
+
+header a {
+    text-decoration: none;
+    color: #f9f9f8;
+}
+
+header nav {
+    float: right;
+    margin: 7px 0;
+  }
+
+header nav ul li {
+    display: inline;
+  }
+
+header nav ul li a {
+    margin: 0 30px;
+    font-weight: lighter;
+    font-size: 22px;
+}
+
+body {
+    /* more on this crazy alphanumerical value in a minute! */
+    color: #151515;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+ /* Hero Style Start */
+
+.hero {
+
+    height: 400px;
+
+    text-align: center;
+
+    position: relative;
+
+}
+
+.hero h2 {
+
+    font-size: 24px;
+
+    margin: 0;
+
+}
+
+.hero img {
+
+    width: 25%;
+
+    margin: 10px 10px 10px 10px;
+
+    padding: 15px 15px 15px 15px;
+
+    align-items: center;
+
+    position: relative;
+
+}
+
+/* Hero Style End */
+
+.ABOUTME {
+
+    text-align: left;
+
+}
+
+.PROJECTS {
+
+    text-align: center;
+
+}
+
+.PROJECTS p {
+
+
+}
+
+.CONTACTME {
+
+    text-align: center;
+
+}
+
+.CONTACTME p {
+
+
+}
