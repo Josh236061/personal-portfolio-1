@@ -1,3 +1,13 @@
+:root {
+
+    --primary-color: #dd9b0c;
+  
+    --secondary-color: #f9f9f8;
+  
+    --tertiary-color: #151515;
+    
+  } 
+
 * {
     margin: 0;
     padding: 0;
@@ -5,20 +15,20 @@
 /* apply styles to <header> */
 header {
     padding: 20px 35px;
-    background-color: #dd9b0c;
+    background-color: var(--primary-color);
 }
 
 header h1 {
     font-weight: bold;
     font-size: 36px;
-    color: #f9f9f8;
+    color: var(--secondary-color);
     margin: 0;
     display: inline;
 }
 
 header a {
     text-decoration: none;
-    color: #f9f9f8;
+    color: var(--secondary-color);
 }
 
 header nav {
@@ -38,13 +48,15 @@ header nav ul li a {
 
 body {
     /* more on this crazy alphanumerical value in a minute! */
-    color: #151515;
+    color: var(--tertiary-color);
     font-family: Helvetica, Arial, sans-serif;
 }
 
  /* Hero Style Start */
 
 .hero {
+
+    background-color: var(--primary-color);
 
     height: 400px;
 
@@ -80,11 +92,23 @@ body {
 
 .ABOUTME {
 
+    background-color: var(--primary-color);
+
     text-align: left;
 
 }
 
+.ABOUTME h2 {
+
+    text-align: center;
+
+    position: absolute;
+
+}
+
 .PROJECTS {
+
+    background-color: var(--primary-color);
 
     text-align: center;
 
@@ -92,16 +116,78 @@ body {
 
 .PROJECTS p {
 
+    color: var(--tertiary-color);
 
 }
 
-.CONTACTME {
+.CONTACTINFO {
+
+    background-color: var(--primary-color);
 
     text-align: center;
 
 }
 
-.CONTACTME p {
+.CONTACTINFO p {
+
+    color: var(--tertiary-color);
+
+}
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+
+@media screen and (max-width: 980px) {
+
+    header {
+
+        padding-bottom: 0;
+    
+        justify-content: center;
+    
+        position: relative;
+    
+    }
+
+      header h1 {
+
+        width: 100%;
+    
+        text-align: center;
+    
+    }
+
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+
+@media screen and (max-width: 768px) {
+
+    section {
+  
+      padding: 30px 15px;
+  
+    }
+
+    .hero-img {
+
+        flex: 0 32%;
+    
+        margin-right: 0;
+    
+        margin-top: 15px;
+    
+        margin-bottom: 15px;
+
+        position: absolute;
+    
+      }
+
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+
+@media screen and (max-width: 575px) {
+
 
 
 }
