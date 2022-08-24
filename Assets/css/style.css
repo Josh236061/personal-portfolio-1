@@ -47,9 +47,38 @@ header nav ul li a {
 }
 
 body {
-    /* more on this crazy alphanumerical value in a minute! */
+    
     color: var(--tertiary-color);
     font-family: Helvetica, Arial, sans-serif;
+}
+
+footer {
+    background: var(--primary-color);
+    width: 100%;
+    padding: 40px 35px;
+}
+
+footer h2 {
+    display: inline;
+    color: var(--tertiary-color);
+    font-size: 15px;
+    margin: 0;
+}
+
+footer div {
+    float: right;
+    line-height: 1.5;
+    text-align: right;
+}
+
+footer a {
+    color: var(--tertiary-color);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
  /* Hero Style Start */
@@ -138,6 +167,12 @@ body {
 
 @media screen and (max-width: 980px) {
 
+    .section-title {
+
+        width: 100%;
+
+    }
+
     header {
 
         padding-bottom: 0;
@@ -156,6 +191,32 @@ body {
     
     }
 
+    footer h2, footer div {
+
+        text-align: center;
+
+        width: 100%;
+
+    }
+
+    .hero-cta, .hero-form {
+
+        width: 100%;
+
+    }
+      
+      .hero-cta {
+
+        text-align: center;
+
+    }
+    
+      .section-title {
+
+        width: 70%;
+
+    }
+
 }
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
@@ -168,15 +229,21 @@ body {
   
     }
 
+    .section-title {
+
+        width: 100%;
+
+    }
+
     .hero-img {
 
-        flex: 0 32%;
+        flex: 0 40%;
     
         margin-right: 0;
     
-        margin-top: 15px;
+        margin-top: 20px;
     
-        margin-bottom: 15px;
+        margin-bottom: 20px;
 
         position: absolute;
     
@@ -187,7 +254,19 @@ body {
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 
 @media screen and (max-width: 575px) {
+    .section-title {
 
+        width: 95%;
+
+    }
+
+    .ABOUTME p {
+
+        width: 100%;
+
+        flex: 10% 100%;
+
+    }
 
 
 }
