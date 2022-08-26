@@ -15,29 +15,70 @@
 /* apply styles to <header> */
 
 ul {
+
     display: flex;
+
     flex-direction: row;
+
     flex-wrap: wrap;
+
 }
 
-.container {
+ .container {
+
+    width: 50%;
+
     display: flex;
+
     flex-direction: row;
+
     flex-wrap: wrap;
+
     justify-content: center;
+
+    margin: 10px;
+}
+
+.container img {
+
+    max-width: 100%;
+
+    padding: 10px;
+
+    border: 5px solid blue;
+
 }
 
 .container2 {
+
+    width: auto;
+
     display: flex;
+
     flex-direction: row;
+
     flex-wrap: wrap;
+
     min-width: 60vw;
+
     justify-content: center;
+
 }
 
-img{
-    min-width: 400px;
+.container2 img {
+
+    max-width: 25%;
+
+    padding: 1px;
+
+    border: 5px solid blue;
+
 }
+
+
+img {
+    min-width: 400px;
+} 
 
 header {
     display: flex;
@@ -261,9 +302,7 @@ footer a {
 
 .PROJECT img {
 
-    width: 25%;
-
-    margin: 10px 10px 10px 10px;
+    margin: 0 10px 10px 0;
 
     padding: 15px 15px 15px 15px;
 
@@ -279,8 +318,6 @@ div.container2 p {
 
     position: relative;
 
-    text-align: center;
-
     color: var(--tertiary-color);
 
 }
@@ -295,15 +332,15 @@ div.container2 p {
     border-radius: 6px;
     padding: 20px;
     margin: 12px;
-  }
+}
   
   .child:first-child {
     width: 100%;
-  }
+}
   
   .child:not(:first-child) {
     flex: 1;
-  }
+}
 
 /* Centered text */
 .centered {
