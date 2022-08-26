@@ -13,10 +13,37 @@
     padding: 0;
 }
 /* apply styles to <header> */
+
+ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-width: 60vw;
+    justify-content: center;
+}
+
+img{
+    min-width: 400px;
+}
+
 header {
-    padding: 20px 35px;
+    display: flex;
     background-color: var(--primary-color);
 }
+
 
 header h1 {
     font-weight: bold;
@@ -34,8 +61,10 @@ header a {
 
 header nav {
     float: right;
-    margin: 7px 0;
-  }
+    margin-left: auto;
+    margin-top: auto;
+}
+
 
 header nav ul li {
     display: inline;
@@ -48,15 +77,17 @@ header nav ul li a {
 }
 
 body {
-    
     color: var(--tertiary-color);
     font-family: Helvetica, Arial, sans-serif;
 }
 
 footer {
-    background: var(--primary-color);
-    width: 100%;
-    padding: 40px 35px;
+    background-color: var(--primary-color);
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 footer h2 {
@@ -84,17 +115,24 @@ footer a {
 
  /* Hero Style Start */
 
-.hero {
+ .hero {
 
     background-color: var(--primary-color);
 
-    height: 400px;
-
     text-align: center;
 
-    position: relative;
+    display: flex;
+
+    width: 100vw;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-direction: column;
 
 }
+
 
 .hero h2 {
 
@@ -132,6 +170,14 @@ footer a {
 
     text-align: left;
 
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-direction: column;
+
 }
 
 .ABOUT h2 {
@@ -158,21 +204,38 @@ footer a {
 }
 
 .PROJECT {
-
-    display: flex;
     
     /* Forces elements to next line when window space is restricted. */
-    flex-wrap: wrap;
-
-    padding: 10px;
 
     background-color: var(--primary-color);
 
-    text-align: center;
+    text-align: left;
 
-    border-style: solid;
+    display: flex;
 
-    position: relative;
+    justify-content: center;
+
+    align-items: center;
+
+    flex-direction: column;
+
+}
+
+.PROJECT h2 {
+
+    background-color: var(--primary-color);
+
+    text-align: left;
+
+    display: flex;
+
+    padding: 20px;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-direction: column;
 
 }
 
@@ -211,15 +274,6 @@ footer a {
 }
 
 /* Container holding the image and the text */
-.container {
-
-    position: relative;
-
-    text-align: center;
-
-    color: var(--secondary-color);
-
-}
 
 div.container2 p {
 
@@ -231,10 +285,32 @@ div.container2 p {
 
 }
 
+.child {
+    display: inline-block;
+    font-family: "Open Sans", Arial;
+    font-size: 20px;
+    color: #FFF;
+    text-align: center;
+    background: #3794fe;
+    border-radius: 6px;
+    padding: 20px;
+    margin: 12px;
+  }
+  
+  .child:first-child {
+    width: 100%;
+  }
+  
+  .child:not(:first-child) {
+    flex: 1;
+  }
+
 /* Centered text */
 .centered {
 
-    position: absolute;
+    position: relative;
+
+    text-align: center;
 
     top: 50%;
 
@@ -261,7 +337,15 @@ div.container2 p {
 
     background-color: var(--primary-color);
 
-    text-align: center;
+    text-align: left;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-direction: column;
 
 }
 
@@ -397,13 +481,13 @@ div.container2 p {
 
     }
 
-    .hero h2 {
+    /* .hero h2 {
 
         text-align: center;
 
         position: relative;
 
-    }
+    }*/
 
     .container2 p {
 
